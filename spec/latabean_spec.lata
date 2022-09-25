@@ -1,0 +1,12 @@
+-- latabean module
+
+import with_dev from require "spec.helpers"
+
+describe "latabean.base", ->
+  with_dev!
+
+  it "should create latapath", ->
+    path = ";./?.lua;/usr/share/lua/5.1/?.lua;/usr/share/lua/5.1/?/init.lua;/usr/lib/lua/5.1/?.luac;/home/roastpeople/.luarocks/lua/5.1/?.lua"
+    import create_latapath from require "latabean.base"
+    assert.same "./?.lata;/usr/share/lua/5.1/?.lata;/usr/share/lua/5.1/?/init.lata;/home/roastpeople/.luarocks/lua/5.1/?.lata", create_latapath(path)
+

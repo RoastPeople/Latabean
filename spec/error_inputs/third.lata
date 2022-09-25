@@ -1,0 +1,20 @@
+
+print = ->
+
+if (->
+  print "hewwo world"
+  print "was ist das")
+  true
+  true
+  true
+  true
+  print dead.world
+  print "okay nooowwwww"
+  print "das ist wrong"
+  print "das ist wrong"
+  print "das ist wrong"
+  print "das ist wrong"
+  print "das ist wrong"
+  print "das ist wrong"
+  print "das ist wrong"
+  

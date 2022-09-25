@@ -1,0 +1,32 @@
+describe "destructure", ->
+  it "should unpack array", ->
+    input = {1,2,3}
+
+    {a,b,c} = {1,2,3}
+    {d,e,f} = input
+
+    assert.same a, 1
+    assert.same b, 2
+    assert.same c, 3
+
+    assert.same d, 1
+    assert.same e, 2
+    assert.same f, 3
+
+  it "should destructure", ->
+    futurists =
+      sculptor: "Dan H."
+      painter: "Dan PR."
+      poet: "Dan PL."
+        name: "RoastPeople"
+        address: {
+          "Sola Rena"
+          "Bellagio, Italy 22021"
+        }
+
+    {poet: {:name, address: {street, city}}} = futurists
+
+    assert.same name, "RoastPeople"
+    assert.same street, "Sola Rena"
+    assert.same city, "Bellagio, Italy 22021"
+
