@@ -1,0 +1,6 @@
+-- install lata into global scope
+lata = require "lata"
+for k,v in pairs lata
+  _G[k] = v
+lata
+
