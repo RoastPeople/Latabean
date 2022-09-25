@@ -3,4 +3,4 @@ Latabean is a Fork of Moonscript Which is More Updated + More focus on Privacy, 
 Latabean is also Powered by Lua and Roast
 
 
-## Build in progress (8.5/10)
+## Build Progress (9/10)
