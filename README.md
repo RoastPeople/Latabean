@@ -1,5 +1,6 @@
 # Latabean
-Latabean is a Language Powered by Lua, Moonscript And Roast
+Latabean is a Fork of Moonscript Which is More Updated + More focus on Privacy, Speed and Being Easy To use,,,
+Latabean is also Powered by Lua and Roast
 
 
 ## Build in progress
